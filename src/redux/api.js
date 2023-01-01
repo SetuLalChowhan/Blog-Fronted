@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "https://dashboard.render.com" });
+const API = axios.create({ baseURL: "https://blog-for-you.onrender.com" });
 API.interceptors.request.use((req) => {
   if (localStorage.getItem("user")) {
     req.headers.Authorization = `Bearer ${
